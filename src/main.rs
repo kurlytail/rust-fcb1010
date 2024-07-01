@@ -101,9 +101,10 @@ impl SysExMessage {
         encoded.extend_from_slice(&self.manufacturer_id);
         encoded.push(self.global_channel);
         encoded.push(self.device_id);
+        encoded.push(0x0f); // Hacked patch
 
         let mut patched_data: Vec<u8> = if let Some(ref data) = self.original_data {
-            data[6..data.len() - 1].to_vec()
+            data[7..data.len() - 1].to_vec()
         } else {
             vec![0u8; 0x7ea] // Size to cover the entire data area including global channels
         };
@@ -157,7 +158,7 @@ impl SysExMessage {
         let device_id = data[5];
 
         let mut fixed_data: Vec<u8> = Vec::new();
-        let mut index = 6;
+        let mut index = 7;
 
         while index + 8 <= data.len() - 1 {
             let chunk = &data[index..index + 8];
