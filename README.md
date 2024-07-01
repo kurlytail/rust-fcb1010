@@ -16,7 +16,7 @@ This Rust application allows you to select a MIDI interface, send and receive Sy
 1. Ensure you have Rust and Cargo installed. If not, install them from [rust-lang.org](https://www.rust-lang.org/).
 2. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/midi-interface-selector.git
+    git clone https://github.com/kurlytail/rust-fcb1010.git
     cd midi-interface-selector
     ```
 3. Build the application:
@@ -51,4 +51,4 @@ This project uses the following crates:
 
 ## Author
 
-- Your Name - [yourusername](https://github.com/yourusername)
+- Your Name - [kurlytail](https://github.com/kurlytail)
