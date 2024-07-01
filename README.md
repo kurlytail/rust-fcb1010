@@ -1,6 +1,6 @@
-# MIDI Interface Selector
+# Behringer FCB1010 programmer
 
-This Rust application allows you to select a MIDI interface, send and receive SysEx messages, and edit the presets and global channels of a MIDI device. It includes a UI with a notebook view for easy editing of presets and a hexdump format.
+This Rust application allows you to select a MIDI interface, send and receive SysEx messages, and edit the presets and global channels of the FCB1010 MIDI device. It includes a UI with a notebook view for easy editing of presets and a hexdump format.
 
 ## Features
 
